@@ -6,7 +6,7 @@ import Notfound from "../Dashboard/Notfound";
 
 export const LoadingContext = createContext(false);
 
-interface UserData {
+type UserData = {
   avatar_url: string;
   login: string;
   created_at: string;
@@ -21,10 +21,25 @@ interface UserData {
   name: string;
   company: string;
   message?: string;
-}
+};
 
 const SearchBar = () => {
-  const [data, setData] = useState<UserData>();
+  const [data, setData] = useState<UserData>({
+    avatar_url: "",
+    login: "",
+    created_at: "",
+    blog: "",
+    bio: "",
+    public_repos: "",
+    followers: "",
+    following: "",
+    location: "",
+    twitter_username: "",
+    html_url: "",
+    name: "",
+    company: "",
+    message: "",
+  });
   const [name, setName] = useState("JavidSumra");
   const [isLoading, setIsLoading] = useState(false);
 
