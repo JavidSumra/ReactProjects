@@ -25,7 +25,7 @@ const User = (props: any) => {
     setImageData(avatar_url);
   }, [avatar_url]);
   console.log(props.userData);
-  const joinDate: string = new Date(created_at).toDateString();
+  const joinDate = new Date(created_at).toDateString();
   return (
     <div className="p-4 rounded-l w-full">
       <div className="top flex items-center ">

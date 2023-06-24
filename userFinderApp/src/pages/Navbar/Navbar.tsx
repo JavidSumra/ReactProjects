@@ -1,5 +1,5 @@
-import React, { createContext } from "react";
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+// import React from "react";
+import { MoonIcon } from "@heroicons/react/24/outline";
 
 // interface ThemeContext {
 //   theme: string;

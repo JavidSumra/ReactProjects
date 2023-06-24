@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import Dashboard from "../Dashboard/Dashboard";
 import { API_ENDPOINT } from "../../config/constant";
@@ -6,14 +6,32 @@ import Notfound from "../Dashboard/Notfound";
 
 export const LoadingContext = createContext(false);
 
+interface UserData {
+  avatar_url: string;
+  login: string;
+  created_at: string;
+  blog: string;
+  bio: string;
+  public_repos: string;
+  followers: string;
+  following: string;
+  location: string;
+  twitter_username: string;
+  html_url: string;
+  name: string;
+  company: string;
+  message?: string;
+}
+
 const SearchBar = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<UserData>();
   const [name, setName] = useState("JavidSumra");
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetchUserData();
   }, []);
+
   const fetchUserData = async () => {
     setIsLoading(true);
     try {

@@ -1,7 +1,7 @@
 import React from "react";
-import User from "./User";
-import Loading from "./Loading";
-import { LoadingContext } from "../searchbar/SearchBar";
+import User from "./User.jsx";
+import Loading from "./Loading.js";
+import { LoadingContext } from "../searchbar/SearchBar.js";
 
 const Dashboard = (props: any) => {
   const loading = React.useContext(LoadingContext);
