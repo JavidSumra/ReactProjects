@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { ThemeContext } from "../../context/theme";
 const Navbar = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = React.useContext(ThemeContext);
   const handleTheme = () => {
     let newTheme;
     if (theme === "dark") {
