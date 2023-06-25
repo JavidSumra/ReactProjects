@@ -66,7 +66,7 @@ const SearchBar = () => {
   };
   return (
     <>
-      <div className="flex w-full rounded-lg p-2 bg-[#1f2a48] items-center justify-between my-2 ">
+      <div className="max-[695px]:w-11/12 flex w-full rounded-lg p-2 bg-[#1f2a48] items-center justify-between my-2 ">
         <div className="flex items-center w-full">
           <MagnifyingGlassIcon className="h-8 w-8 text-blue-500 font-medium"></MagnifyingGlassIcon>
           <input

@@ -27,15 +27,15 @@ const User = (props: any) => {
   console.log(props.userData);
   const joinDate = new Date(created_at).toDateString();
   return (
-    <div className="p-4 rounded-l w-full">
-      <div className="top flex items-center ">
+    <div className="p-4 rounded-l w-full ">
+      <div className="top flex items-center max-[946px]:flex-wrap md:flex-nowrap max-[946px]:justify-center">
         <img
           src={`${imageData}`}
           alt=""
-          className="w-24 h-24 rounded-full shadow"
+          className="w-24 h-24 rounded-full shadow "
         />
 
-        <div className="flex mx-4 items-center justify-between w-full flex-wrap">
+        <div className="flex mx-4 items-center justify-between w-full flex-wrap max-[946px]:justify-center max-[946px]:flex-col">
           <div className="name text-3xl font-medium flex items-center flex-col">
             <div>{name ? <span>{name}</span> : <span>{login}</span>}</div>
             <div>{blog && <span className="text-sm">{blog}</span>}</div>
@@ -93,7 +93,7 @@ const User = (props: any) => {
             </span>
           </div>
         </div>
-        <div className="flex items-center flex-wrap justify-around flex-col">
+        <div className="flex items-start flex-wrap justify-around flex-col ">
           <div className="flex flex-wrap">
             <span className="flex text-lg items-center">
               <LinkIcon
@@ -107,7 +107,7 @@ const User = (props: any) => {
               )}
             </span>
           </div>
-          <div className="flex flex-wrap hover:text-[#00acee] items-start w-full">
+          <div className="flex flex-wrap hover:text-[#00acee] items-center w-full max-[946px]:justify-center">
             <span className="flex text-lg items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

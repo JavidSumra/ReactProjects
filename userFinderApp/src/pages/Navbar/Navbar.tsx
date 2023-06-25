@@ -11,7 +11,7 @@ const Navbar = () => {
   //   setTheme: () => {},
   // });
   return (
-    <div className="flex items-center justify-between p-1 w-full">
+    <div className="flex items-center justify-between p-1 w-full max-[695px]:w-11/12">
       <div className="text-white font-medium text-2xl">userFinder</div>
       <div>
         <MoonIcon className="h-6 w-6" aria-hidden="true"></MoonIcon>
