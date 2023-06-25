@@ -71,7 +71,7 @@ const SearchBar = () => {
           <MagnifyingGlassIcon className="h-8 w-8 text-blue-500 font-medium"></MagnifyingGlassIcon>
           <input
             type="text"
-            className="w-full mx-2 bg-[#1f2a48] text-gray-400  text-xl p-2 outline-none focus:border-b focus:border-blue-500 "
+            className="w-full mx-2 bg-[#1f2a48] text-gray-400  text-xl p-2 outline-none focus:border-b focus:border-blue-500 max-[552px]:text-sm"
             placeholder="Search Github Username"
             onChange={(e) => {
               setName(e.target.value);
