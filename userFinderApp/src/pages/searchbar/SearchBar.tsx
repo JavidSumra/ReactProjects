@@ -66,12 +66,12 @@ const SearchBar = () => {
   };
   return (
     <>
-      <div className="max-[695px]:w-11/12 flex w-full rounded-lg p-2 bg-[#1f2a48] items-center justify-between my-2 ">
+      <div className="max-[695px]:w-11/12 flex w-full shadow-xl rounded-lg p-2 bg-[#fffffe] dark:bg-[#1f2a48] items-center justify-between my-2 ">
         <div className="flex items-center w-full">
           <MagnifyingGlassIcon className="h-8 w-8 text-blue-500 font-medium"></MagnifyingGlassIcon>
           <input
             type="text"
-            className="w-full mx-2 bg-[#1f2a48] text-gray-400  text-xl p-2 outline-none focus:border-b focus:border-blue-500 max-[552px]:text-sm"
+            className="w-full mx-2 dark:bg-[#1f2a48] text-gray-400  text-xl p-2 outline-none focus:border-b focus:border-blue-500 max-[552px]:text-sm"
             placeholder="Search Github Username"
             onChange={(e) => {
               setName(e.target.value);

@@ -13,7 +13,7 @@ const Dashboard = (props: any) => {
     );
   }
   return (
-    <div className="bg-[#1f2a48] text-white rounded-lg shadow-md w-full max-[695px]:w-11/12 ">
+    <div className="bg-white dark:bg-[#1f2a48] text-black dark:text-white rounded-lg shadow-xl w-full max-[695px]:w-11/12 ">
       <User userData={props.UserData} />
     </div>
   );
